@@ -1,9 +1,8 @@
- exports.noToken = "Bot token tidak boleh kosong, silahkan buat bot melalui https://t.me/BotFather"
+// exports.noToken = "Bot token tidak boleh kosong, silahkan buat bot melalui https://t.me/BotFather"
+  exports.noToken = "Bot Berhasil Konek Silahkan Ketik /menu pada bot"
 
 exports.first_chat = (botname, pushname) => {
-    return `Alo bang ${pushname}! Nama saya ${botname} - Saya adalah Bot Telegram multi fungsi! Klik /menu untuk mengetahui lebih lanjut tentang cara menggunakan bot ini.
-
-[Join Group WhatsApp](https://chat.whatsapp.com/DahjtvilGCi9ZwobHGtSGh)`
+    return `Alo bang ${pushname}! Nama saya ${botname} - Saya adalah Bot Telegram multi fungsi! Klik /menu untuk mengetahui lebih lanjut tentang cara menggunakan bot ini.)`
 }
 exports.snk = "Syarat & Ketentuan Bot\n\n1.GADA SYARAT"
 exports.getStyle = (style, style2) => {
@@ -11,7 +10,7 @@ exports.getStyle = (style, style2) => {
 }
 exports.wait = "`⏳ © 𝙔𝙪𝙙𝙖 𝙈𝙤𝙙𝙨 𖤍.`"
 exports.ok = "`© 𝙔𝙪𝙙𝙖 𝙈𝙤𝙙𝙨 𖤍. Done ✅`"
-exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hitall, latensii, os, simple, week, date, dateIslamic, username, isCreator, user_id) => {
+exports.menu = async (yudamods, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hitall, latensii, os, simple, week, date, dateIslamic, username, isCreator, user_id) => {
     var ini_anu = `Hi ${pushname}
 
 ╭─❒ 「 Bot Info 」 
@@ -97,7 +96,7 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
         ],
     ]
     try {
-        await alpha.editMessageMedia({
+        await yudamods.editMessageMedia({
             type: "photo",
             media: {
                 source: thumbnail
@@ -111,7 +110,7 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
             }
         })
     } catch {
-        await alpha.replyWithPhoto({
+        await yudamods.replyWithPhoto({
             source: thumbnail
         }, {
             caption: ini_anu,
@@ -123,7 +122,7 @@ exports.menu = async (alpha, thumbnail, pushname, OWNER_NAME, OWNER, prefix, hit
         })
     }
 }
-exports.animecmd = async (alpha, thumbnail, user_id) => {
+exports.animecmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -186,7 +185,7 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
 » /loli
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -200,7 +199,7 @@ exports.animecmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.asupancmd = async (alpha, thumbnail, user_id) => {
+exports.asupancmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -240,7 +239,7 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
 » /mangayutri
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -254,7 +253,7 @@ exports.asupancmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.cecancmd = async (alpha, thumbnail, user_id) => {
+exports.cecancmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -284,7 +283,7 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
 » /rose
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -298,7 +297,7 @@ exports.cecancmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.cogancmd = async (alpha, thumbnail, user_id) => {
+exports.cogancmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -335,7 +334,7 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
 » /baekhyung
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -349,7 +348,7 @@ exports.cogancmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.downloadcmd = async (alpha, thumbnail, user_id) => {
+exports.downloadcmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -380,7 +379,7 @@ exports.downloadcmd = async (alpha, thumbnail, user_id) => {
 » /tiktokaudio
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -394,7 +393,7 @@ exports.downloadcmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.ephotocmd = async (alpha, thumbnail, user_id) => {
+exports.ephotocmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -455,7 +454,7 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
 » /modengold3
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -469,7 +468,7 @@ exports.ephotocmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
+exports.ephotocmd2 = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -530,7 +529,7 @@ exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
 » /juventusshirt
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -544,7 +543,7 @@ exports.ephotocmd2 = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.logocmd = async (alpha, thumbnail, user_id) => {
+exports.logocmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -596,7 +595,7 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
 » /csgocover
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -610,7 +609,7 @@ exports.logocmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.logocmd2 = async (alpha, thumbnail, user_id) => {
+exports.logocmd2 = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -661,7 +660,7 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
 » /wallpaperml
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -675,7 +674,7 @@ exports.logocmd2 = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.islamcmd = async (alpha, thumbnail, user_id) => {
+exports.islamcmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -703,7 +702,7 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
 » /alquranaudio
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -717,7 +716,7 @@ exports.islamcmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
+exports.nsfwcmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -805,7 +804,7 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
 » /tickle
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -819,7 +818,7 @@ exports.nsfwcmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.photooxycmd = async (alpha, thumbnail, user_id) => {
+exports.photooxycmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -885,7 +884,7 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
 » /text-8bit
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -899,7 +898,7 @@ exports.photooxycmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.textprocmd = async (alpha, thumbnail, user_id) => {
+exports.textprocmd = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -967,7 +966,7 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
 » /eroded-metal
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -981,7 +980,7 @@ exports.textprocmd = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
+exports.textprocmd2 = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -1056,7 +1055,7 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
 » /pink-glitter
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
@@ -1070,7 +1069,7 @@ exports.textprocmd2 = async (alpha, thumbnail, user_id) => {
         }
     })
 }
-exports.textprocmd3 = async (alpha, thumbnail, user_id) => {
+exports.textprocmd3 = async (yudamods, thumbnail, user_id) => {
     var button = [
         [{
                 text: '⬅️ Kembali !!',
@@ -1160,7 +1159,7 @@ exports.textprocmd3 = async (alpha, thumbnail, user_id) => {
 » /bagel
 ╰──────────◇
 `
-    await alpha.editMessageMedia({
+    await yudamods.editMessageMedia({
         type: "photo",
         media: {
             source: thumbnail
